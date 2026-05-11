@@ -27,7 +27,7 @@ install_hy2() {
             fi
 
             print_info "正在下载并执行脚本..."
-            wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
+            bash <(wget -qO- --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh)
             ;;
         macos)
             print_error "此脚本不支持 macOS"

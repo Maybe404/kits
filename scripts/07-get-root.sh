@@ -27,7 +27,7 @@ get_root() {
             fi
 
             print_info "正在下载并执行脚本..."
-            wget -N https://gitlab.com/rwkgyg/vpsroot/raw/main/root.sh && bash root.sh
+            bash <(wget -qO- https://gitlab.com/rwkgyg/vpsroot/raw/main/root.sh)
             ;;
         macos)
             print_error "此脚本不支持 macOS"

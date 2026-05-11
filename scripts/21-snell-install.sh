@@ -27,7 +27,7 @@ install_snell() {
             fi
 
             print_info "正在下载并执行脚本..."
-            wget -O snell.sh --no-check-certificate https://git.io/Snell.sh && chmod +x snell.sh && ./snell.sh
+            bash <(wget -qO- --no-check-certificate https://git.io/Snell.sh)
             ;;
         macos)
             print_error "此脚本不支持 macOS"

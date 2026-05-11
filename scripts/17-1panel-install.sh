@@ -18,11 +18,11 @@ install_1panel() {
     case $os in
         ubuntu)
             print_info "使用 1Panel 官方脚本安装（Ubuntu）..."
-            curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
+            sudo bash <(curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh)
             ;;
         debian)
             print_info "使用 1Panel 官方脚本安装（Debian）..."
-            curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
+            bash <(curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh)
             ;;
         macos)
             print_error "此脚本不支持 macOS"

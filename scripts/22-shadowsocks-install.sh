@@ -27,7 +27,7 @@ install_shadowsocks() {
             fi
 
             print_info "正在下载并执行脚本..."
-            wget -O ss-rust.sh --no-check-certificate https://raw.githubusercontent.com/xOS/Shadowsocks-Rust/master/ss-rust.sh && chmod +x ss-rust.sh && ./ss-rust.sh
+            bash <(wget -qO- --no-check-certificate https://raw.githubusercontent.com/xOS/Shadowsocks-Rust/master/ss-rust.sh)
             ;;
         macos)
             print_error "此脚本不支持 macOS"

@@ -18,11 +18,11 @@ acme_cert() {
     case $os in
         ubuntu|debian)
             print_info "正在下载并执行脚本..."
-            wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/acme-script/main/acme.sh && bash acme.sh
+            bash <(wget -qO- --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/acme-script/main/acme.sh)
             ;;
         macos)
             print_info "正在下载并执行脚本..."
-            curl -O https://raw.githubusercontent.com/Misaka-blog/acme-script/main/acme.sh && bash acme.sh
+            bash <(curl -sSL https://raw.githubusercontent.com/Misaka-blog/acme-script/main/acme.sh)
             ;;
         *)
             print_error "不支持的系统"
