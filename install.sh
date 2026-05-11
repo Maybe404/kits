@@ -1,11 +1,11 @@
 #!/bin/bash
 
-source ./utils/colors.sh
-source ./utils/menu.sh
-source ./utils/detect-system.sh
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
+
+source "$SCRIPT_DIR/utils/colors.sh"
+source "$SCRIPT_DIR/utils/menu.sh"
+source "$SCRIPT_DIR/utils/detect-system.sh"
 
 # 菜单选项数组
 MENU_OPTIONS_BASIC=(
