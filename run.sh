@@ -122,21 +122,20 @@ execute_script() {
         11) script="scripts/11-network-latency-test.sh" ;;
         12) script="scripts/12-trace-route-test.sh" ;;
         13) script="scripts/13-streaming-media-check.sh" ;;
-        14) script="scripts/14-3x-ui.sh" ;;  # 菜单序号14 = 3x-ui（网络测试占11-18，VPS从19开始）
-        # 重新对应：网络测试 11-18，VPS 19-27
-        15) script="scripts/15-hy2-install.sh" ;;
-        16) script="scripts/16-singbox-install.sh" ;;
-        17) script="scripts/17-1panel-install.sh" ;;
-        18) script="scripts/18-ecs-test.sh" ;;
-        19) script="scripts/19-network-quality-check.sh" ;;
-        20) script="scripts/20-ip-quality-check.sh" ;;
-        21) script="scripts/21-snell-install.sh" ;;
-        22) script="scripts/22-shadowsocks-install.sh" ;;
-        23) script="scripts/23-reality-install.sh" ;;
-        24) script="scripts/24-kejilion-install.sh" ;;
-        25) script="scripts/25-substore-docker.sh" ;;
-        26) script="scripts/26-packet-size-test-large.sh" ;;
-        27) script="scripts/27-packet-size-test-small.sh" ;;
+        14) script="scripts/18-ecs-test.sh" ;;
+        15) script="scripts/19-network-quality-check.sh" ;;
+        16) script="scripts/20-ip-quality-check.sh" ;;
+        17) script="scripts/26-packet-size-test-large.sh" ;;
+        18) script="scripts/27-packet-size-test-small.sh" ;;
+        19) script="scripts/14-3x-ui.sh" ;;
+        20) script="scripts/15-hy2-install.sh" ;;
+        21) script="scripts/16-singbox-install.sh" ;;
+        22) script="scripts/17-1panel-install.sh" ;;
+        23) script="scripts/21-snell-install.sh" ;;
+        24) script="scripts/22-shadowsocks-install.sh" ;;
+        25) script="scripts/23-reality-install.sh" ;;
+        26) script="scripts/24-kejilion-install.sh" ;;
+        27) script="scripts/25-substore-docker.sh" ;;
         *)  print_error "无效选择"; return 1 ;;
     esac
 
